@@ -7,7 +7,6 @@ Spin up an NGINX container with __Hashicorp Nomad__ that servers your files via 
 server {
     listen 8080;
     listen [::]:8080;
-    include /etc/nginx/conf.d/header.conf;
 
     server_name  my.domain.com;
 
