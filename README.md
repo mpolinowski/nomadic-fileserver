@@ -12,7 +12,7 @@ server {
     server_name  my.domain.com;
 
     location ~ /secret/.* {
-		    auth_basic "Restricted";
+	auth_basic "Restricted";
         auth_basic_user_file /etc/nginx/conf.d/.htpasswd; 
         root   /usr/share/nginx/html;
     }
